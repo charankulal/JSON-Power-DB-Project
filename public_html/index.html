@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Employee Form</title>
+    <title>Charan K - Employee Form</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -16,21 +16,31 @@
   </head>
   <body>
     <div class="container">
-      <h2 class="text-center">Vertical (basic) form</h2>
-      <form>
+      <h2 class="text-center m-5">Employee Details Form</h2>
+      <form style="width: 75%; padding-left: 25%">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-
+          <label for="empId" class="form-label">Employee Id</label>
+          <input type="text" class="form-control" id="empId" />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="mb-3">
+          <label for="empSalary" class="form-label">Salary</label>
+          <input type="text" class="form-control" id="empSalary" />
+        </div>
+        <div class="mb-3">
+          <label for="hra" class="form-label">HRA</label>
+          <input type="text" class="form-control" id="hra" />
+        </div>
+        <div class="mb-3">
+          <label for="da" class="form-label">DA</label>
+          <input type="text" class="form-control" id="da" />
+        </div>
+        <div class="mb-3">
+          <label for="deduction" class="form-label">Deduction</label>
+          <input type="text" class="form-control" id="deduction" />
+        </div>
+        <button type="submit" class="btn btn-success" disabled>Save</button>
+        <button type="submit" class="btn btn-warning" disabled>Change</button>
+        <button type="submit" class="btn btn-danger" disabled>Reset</button>
       </form>
     </div>
     <script
