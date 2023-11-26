@@ -19,32 +19,47 @@
       <h2 class="text-center m-5">Employee Details Form</h2>
       <form style="width: 75%; padding-left: 25%">
         <div class="mb-3">
-          <label for="empId" class="form-label">Employee Id</label>
+          <label for="empId" class="form-label">Employee Id<span class="text-danger">*</span></label>
           <input type="text" class="form-control" id="empId" onchange="" />
         </div>
         <div class="mb-3">
-          <label for="empName" class="form-label">Employee Name</label>
+          <label for="empName" class="form-label">Employee Name<span class="text-danger">*</span></label>
           <input type="text" class="form-control" id="empName" />
         </div>
         <div class="mb-3">
-          <label for="empSalary" class="form-label">Basic Salary</label>
+          <label for="empSalary" class="form-label"
+            >Basic Salary <span class="text-danger">*</span></label
+          >
           <input type="number" class="form-control" id="empSalary" />
         </div>
         <div class="mb-3">
-          <label for="hra" class="form-label">HRA</label>
+          <label for="hra" class="form-label">HRA <span class="text-danger">*</span></label>
           <input type="number" class="form-control" id="hra" />
         </div>
         <div class="mb-3">
-          <label for="da" class="form-label">DA</label>
+          <label for="da" class="form-label">DA <span class="text-danger">*</span></label>
           <input type="number" class="form-control" id="da" />
         </div>
         <div class="mb-3">
-          <label for="deduction" class="form-label">Deduction</label>
+          <label for="deduction" class="form-label">Deduction <span class="text-danger">*</span></label>
           <input type="number" class="form-control" id="deduction" />
+
         </div>
-        <button type="button" class="btn btn-success" id="saveButton" >Save</button>
-        <button type="button" class="btn btn-warning" id="changeButton" >Change</button>
-        <button type="button" class="btn btn-danger" id="resetButton" onclick="resetEmployeeForm();">Reset</button>
+        <button type="button" class="btn btn-success" id="saveButton"
+        onclick="saveEmployeeForm();">
+          Save
+        </button>
+        <button type="button" class="btn btn-warning" id="changeButton">
+          Change
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          id="resetButton"
+          onclick="resetEmployeeForm();"
+        >
+          Reset
+        </button>
       </form>
     </div>
     <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
